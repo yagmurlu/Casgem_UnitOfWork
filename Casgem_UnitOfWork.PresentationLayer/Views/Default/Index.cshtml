@@ -1,0 +1,22 @@
+﻿@model Casgem_UnitOfWork.EntityLayer.Concrete.CustomerProcess
+@{
+    Layout = null;
+}
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+    <br />
+    <br />
+    <form method="post">
+        <label>Gönderen Id</label>
+        <input type="text" asp-for="SenderID" class="form-control"/>
+        <br />
+        <label>Alıcı Id</label>
+        <input type="text" asp-for="ReceiverID" class="form-control" />
+        <br />
+        <label>Miktar</label>
+        <input type="text" asp-for="Amount" class="form-control" />
+        <br />
+        <button class="btn btn-primary">Para Gönder</button>
+    </form>
+</div>
